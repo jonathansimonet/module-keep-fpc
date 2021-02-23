@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="jogento" translate="label" sortOrder="999">
+            <label>Jogento</label>
+        </tab>
+        <section id="keep_fpc" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+            <label>Keep FPC</label>
+            <tab>jogento</tab>
+            <resource>Jogento_Keepfpc::config_jogento_keepfpc</resource>
+            <group id="general" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                <label>General</label>
+                <field id="enable" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Enable Keep FPC</label>
+                    <comment>Enable/Disable Keep FPC</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="whitelisted_paramaters" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Whitelisted Parameters</label>
+                    <comment>To not bypass the FPC, please enter the URL parameters whitelisted, separated by a comma.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,22 @@
+{
+    "name": "jogento/module-keepfpc",
+    "description": "",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Jonathan Simonet",
+            "email": "jonathan.l.simonet@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Jogento\\Keepfpc\\": ""
+        }
+    }
+}
